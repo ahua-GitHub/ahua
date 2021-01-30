@@ -1,0 +1,265 @@
+.outline{
+    animation:'';
+}
+@keyframes outline {
+    from{right:-100%}
+    to{right: 0}
+}
+#header{
+    animation: '';
+}
+@keyframes header{
+    from{background:rgb(247,247,247);}
+    to{background:rgba(0,0,0,0.4)}
+}
+@keyframes headerOver{
+    from{background:rgba(0,0,0,0.4)}
+    to{background:rgb(247,247,247)}
+}
+header .wrap .nav a:hover{
+    color: red;
+}
+.state{
+    color: red;
+}
+header .wrap .nav .state{
+    color: red;
+}
+header .wrap .nav a:last-child:hover{
+    border-bottom: 3px solid black;
+}
+/*第一屏动画*/
+.screen-1 .phone{
+    animation:phoneDrop 0.6s linear;
+}
+.screen-1 .character{
+    animation: characterRise 0.6s linear;
+}
+.screen-1 .shadow{
+    animation:shadowRise 0.6s linear;
+}
+@keyframes  phoneDrop{
+    from{bottom:450px;opacity: 0}
+    to{bottom: 140px;opacity: 1}
+}
+@keyframes  characterRise{
+    from{top:70%;opacity: 0}
+    to{top:150px;opacity: 1}
+}
+@keyframes shadowRise {
+    from{bottom:-40%;opacity: 0}
+    to{bottom: 0;opacity: 1}
+}
+/*第二屏动画*/
+.screen-2 p{
+    animation: '';
+}
+.screen-2 a:nth-child(3){
+    animation:'';
+}
+.screen-2 a:nth-child(4){
+    animation:'';
+}
+.screen-2 .bgPic{
+    animation:'';
+}
+.screen-2 .bgPic b:nth-child(1){
+    animation:'';
+}
+.screen-2 .bgPic b:nth-child(2){
+    animation:'';
+}
+.screen-2 .bgPic b:nth-child(3){
+    animation:'';
+}
+.screen-2 .sOne{
+    animation: sOne 0.7s infinite alternate;
+}
+.screen-2 .sTwo{
+    animation: sTwo 0.7s infinite alternate;
+}
+.screen-2 .sThere{
+    animation: sThere 0.7s infinite alternate;
+}
+@keyframes pDrop{
+    from{top:0;opacity: 0}
+    to{top:10%;opacity:1}
+}
+@keyframes aRise{
+    from{top:30%;opacity:0}
+    to{top:22%;opacity: 1}
+}
+@keyframes aRiseTwo{
+    from{top:34%;opacity:0}
+    to{top:26%;opacity: 1}
+}
+@keyframes bgPic{
+    from{top:80%;opacity: 0}
+    to{top:35%;opacity: 1}
+}
+@keyframes bOne{
+    0%{top:60%;opacity: 0;right:-10%;}
+    50%{top:5%;opacity: 1;right:-10%;}
+    100%{right:10%;opacity: 1;}
+}
+@keyframes bTwo{
+    0%{top:80%;opacity: 0;right:-20%;}
+    50%{top:35%;opacity: 1;right:-20%;}
+    100%{right:0;opacity: 1;}
+}
+@keyframes bThere{
+    0%{top:80%;left:-42%;opacity: 0}
+    50%{top:17%;opacity: 1;left:-42%;}
+    100%{left: -22%;opacity: 1}
+}
+@keyframes sOne {
+    from{transform: scale(0)}
+    to{transform: scale(2)}
+}
+@keyframes sTwo {
+    from{transform: scale(0)}
+    to{transform: scale(2)}
+}
+@keyframes sThere {
+    from{transform: scale(0)}
+    to{transform: scale(2)}
+}
+
+/*第三屏*/
+
+.screen-3 #phone{
+    animation:'';
+}
+.screen-3 i{
+    animation:'';
+}
+.screen-3 a:nth-child(2){
+    animation:'';
+}
+.screen-3 a:nth-child(3){
+    animation:'';
+}
+.screen-3 .box{
+    animation:'';
+}
+.screen-3 .box div{
+    transition:all 0.6s;/*鼠标滑下依然按照动画完成时间回复原状*/
+}
+.screen-3 .box div:hover{
+    transform: scale(1.1);
+
+}
+@keyframes phone{
+    from{bottom:-50%;opacity:0;}
+    to{bottom:0;opacity:1;}
+}
+@keyframes iDrop{
+    from{top:0;opacity:0;}
+    to{top:70px;opacity:1;}
+}
+@keyframes aRiseOne{
+    from{top:280px;opacity:0;}
+    to{top:160px;opacity:1;}
+}
+@keyframes aRiseThere{
+    from{top:310px;opacity:0;}
+    to{top:190px;opacity:1;}
+}
+@keyframes box{
+    from{transform: scale(0.5);opacity: 0}
+    to{transform: scale(1);opacity: 1;}
+}
+
+/*第四屏*/
+.screen-4 p{
+    animation:'';
+}
+.screen-4 a{
+    animation:'';
+ }
+.screen-4 .phone .item1{
+    animation:'';
+}
+.screen-4 .phone .item2{
+    animation:'';
+}
+.screen-4 .phone .item3{
+    animation:'';
+}
+.screen-4 .phone .item4{
+    animation:'';
+}
+@keyframes pRiseFour{
+    from{top:0;opacity: 0}
+    to{top:13%;;opacity:1;}
+}
+@keyframes aRiseFour{
+    from{opacity:0;top:40%}
+    to{top:25%;opacity:1;}
+}
+@keyframes phoneItemTwo{
+    from{opacity:0;}
+    to{opacity:1; }
+}
+@keyframes phoneItemOne{
+    from{opacity:0;}
+    to{opacity:1; }
+}
+@keyframes phoneItemThere{
+    from{opacity:0;}
+    to{opacity:1; }
+}
+@keyframes phoneItemFour{
+    from{opacity:0;}
+    to{opacity:1; }
+}
+
+
+/*第五屏*/
+
+.screen-5 p{
+    animation:'';
+}
+.screen-5 a{
+    animation:'';
+}
+.screen-5 .bg{
+    animation:'';
+}
+@keyframes pDropFive{
+    from{opacity:0;top:0;}
+    to{opacity:1;top:130px}
+}
+@keyframes aRiseFive{
+    from{opacity:0;top:320px;}
+    to{opacity:1;top:220px;}
+}
+@keyframes bgRiseFive{
+    from{opacity:0;bottom:-30%}
+    to{opacity:1;bottom:0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

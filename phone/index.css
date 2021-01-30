@@ -1,0 +1,89 @@
+*{padding:0;margin:0;box-sizing: border-box;border: 0;}
+a{text-decoration: none;}
+b{font-style: normal}
+i{font-style: normal}
+ul{list-style: none}
+.outline{position: fixed;right:-10%;top:40%;z-index: 999;font-size: 12px;color:gray}
+.outline ul{padding: 0 13px 0 13px;background: white;border-radius:3px;cursor: pointer;}
+.outline li{border-bottom: 1px darkgray solid;height: 40px;text-align: center;line-height: 40px;}
+.outline li:last-child{border-bottom: none;}
+
+header{background:rgb(247,247,247);position:sticky;z-index:3;top:0;height: 80px;width: 100%}
+header .wrap{width:100%;height:80px;}
+header .wrap span{height: 80px;width: 120px;display: block;line-height:110px;float: left;margin-left: 6%;}
+header .wrap span a{height: 80px;display: block;float:right;line-height:80px;}
+header .wrap .nav{height: 80px;width:500px;float: right;cursor: pointer;text-align: center;
+    display: flex;align-items: center}
+header .wrap .nav a{padding-left:5%;color: black;height: 60px;line-height:60px;float:left;display:flex;justify-content: center}
+header .wrap .nav a:last-child{background: black;color: white;height: 40px;width:100px;padding: 0;margin-left: 20px;
+    line-height:40px;border-radius: 3px;}
+.underline{position:absolute;top:65px;width: 28px;height: 3px;transition: all 0.5s;background: red;z-index:3;border-radius: 6px;}
+
+.screen-1{background: url("img/bg-screen-1.png") no-repeat;height:760px;width:100%;position: relative;overflow: hidden}
+.screen-1 .character{position: absolute;left: 0;right: 0;margin: auto;width:100%;height:100px;text-align: center;top:150px;
+    font-size:48px;}
+.screen-1 .phone{background: url("img/screen-1-phone.png") no-repeat center;z-index: 2;height:40%;width: 100%;position: absolute;
+    bottom: 140px;}
+.screen-1 .shadow{background: url("img/screen-1-shadow.png") no-repeat center;width: 100%;height: 50%;position: absolute;bottom: 0;}
+.screen-1 div a{color: #f1342f;font-style: normal;}
+.screen-1 div i{margin-left: 10px;color: rgb(77,85,93)}
+
+
+.screen-2{height:760px;width:100%;position: relative;background: rgb(250,250,250); color:#07111b;text-align: center;overflow: hidden}
+.screen-2 .bgPic{left:30%; background: url("img/screen-2-phone.png") no-repeat;position: absolute; height:760px;
+    width:800px; background-size: cover;opacity:0;top:35%;right:-18%}
+.screen-2 p{width:100%;height:100px;font-size:48px;color: #f1342f;position:absolute;left:0;right:0;top:10%;margin: auto;
+    z-index:1;opacity: 0;}
+.screen-2 a{position: absolute;left:0;right:0;margin: auto;width:100%;height:30px;font-size:14px;opacity: 0;z-index:0}
+.screen-2 a:nth-child(4){top:26%;}
+.screen-2 a:nth-child(3){top:22%;}
+.screen-2 b{position: absolute;top:5%;right:10%;color: rgb(77,85,93);font-size: 24px;opacity: 1;}
+.screen-2 b:before{content: '';width: 100px;height:2px;background-image:linear-gradient(to right,rgb(250,7,7),rgba(255,255,255,.2));
+    display:block;position:absolute;top:12px;left:-115%;}
+.screen-2 b:after{content: '';width:10px;height: 10px;border-radius:50%;position: absolute;display: block;
+    background: #f1342f;top:8px;left:-120px;}
+.screen-2 b:nth-child(2){top:35%;right:0;width: 96px;}
+.screen-2 b:nth-child(2):before{top:15px;left: -124%}
+.screen-2 b:nth-child(2):after{top:11px;}
+.screen-2 b:nth-child(3){top:17%;left:-22%;width: 96px;}
+.screen-2 b:nth-child(3):before{background-image:linear-gradient(to left,rgb(250,7,7),rgba(255,255,255,.2));top:15px;left:108px;}
+.screen-2 b:nth-child(3):after{top:11px;left:215%;}
+.screen-2 .sOne{top:22%;}
+.screen-2 span{opacity: 0;position: absolute;top:33%;right:215%;background:rgba(250,7,7,0.4);width: 11px;height: 11px;
+    border-radius: 50%}
+.screen-2 .sThere{top:33%;left:214%;}
+
+.screen-3{background: url("img/bg-screen-3.png") no-repeat;position: relative;color: white;height:760px;width:100%;overflow: hidden}
+.screen-3 .phone{background:url("img/screen-3-phone.png") no-repeat 630px 150px;height:760px;width:100%;position: absolute;
+    opacity: 0}
+.screen-3 i{font-size:46px;position: absolute;top:70px;left: 170px;opacity: 0;}
+.screen-3 a:nth-child(2){position: absolute;top:160px;left: 170px;opacity: 0;}
+.screen-3 a:nth-child(3){position: absolute;top:190px;left: 170px;opacity: 0;}
+.screen-3 .box{position:absolute;width: 400px;top:350px;left: 170px;opacity: 0;}
+.screen-3 .box div{width: 150px;height: 100px;border: 1px white solid;float: left;margin:20px;}
+.screen-3 .box div p{text-align: center;font-size:32px;margin-top: 20px; }
+.screen-3 .box div b{text-align: center;display: block;font-style:normal;font-weight: 100;}
+
+
+.screen-4{height:760px;width:100%;position: relative;}
+.screen-4 .phone{height:270px;width:100%;display: flex;justify-content: center;position: absolute;top: 40%;}
+.screen-4 .phone div{height:270px;width:270px;float: left;font-weight: 100;opacity: 0;}
+.screen-4 .phone div i{position: absolute;bottom: -80px;width: 270px;text-align: center;color:rgb(70,74,79);font-size: 12px;}
+.screen-4 .phone div b{position: absolute;bottom: -60px;font-weight:100;width: 270px;text-align: center;font-size: 12px;}
+.screen-4 .phone .item1{background: url("img/phone-1.png") no-repeat bottom;}
+.screen-4 .phone .item2{background: url("img/phone-2.png") no-repeat bottom;}
+.screen-4 .phone .item3{background: url("img/phone-3.png") no-repeat bottom;}
+.screen-4 .phone .item4{background: url("img/phone-4.png") no-repeat bottom;}
+.screen-4 p{position:absolute;top:13%;width: 100%;text-align: center;font-size:48px;color: #f1342f;opacity:0;}
+.screen-4 a{position: absolute;top:25%;width: 100%;text-align: center;color: rgb(70,74,79);opacity: 0;}
+
+.screen-5{height:760px;width:100%;position: relative;background: rgb(217,221,225);overflow: hidden;}
+.screen-5 p{color: #f1342f;width: 100%;text-align: center;font-size:48px;position: absolute;top:130px;opacity: 0;}
+.screen-5 a{color:rgb(44,49,55);width: 100%;text-align: center;font-size:18px;position: absolute;top:220px;opacity:0;}
+.screen-5 .bg{position: absolute;background: url("img/bg-screen-5.png") no-repeat bottom;bottom:0;opacity:0 ;
+    background-size: contain;height: 760px;width: 100%}
+
+footer .buy{height:200px;width: 100%;background: url("img/bg-screen-buy.png");text-align: center;line-height:200px;}
+footer .buy input{width: 200px;height:80px;text-align: center;background: red;color: white;font-size: 24px;
+    border-radius: 3px;cursor:pointer;}
+footer .record{height: 100px;width: 100%;background: rgb(7,17,27);text-align: center;line-height: 100px;}
