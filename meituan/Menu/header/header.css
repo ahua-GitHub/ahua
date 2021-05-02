@@ -1,0 +1,62 @@
+
+.header-content{
+    height:4rem;
+    position: relative;
+    border-bottom: rgb(178,178,178) 1px solid;
+}
+.return-slide{
+    height:1.5rem;
+    width:5%;
+    background-image: url("../img/back.png");
+    background-size: cover;
+    position: absolute;
+    left: 10%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.header-title{
+    font-size:1.1rem;
+    line-height:4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:4rem;
+}
+.header-selection ul{
+    height: 3rem;
+}
+.header-selection li{
+    float: left;
+    height: 3rem;
+    line-height:3rem;
+    width: 33.3%;
+    text-align: center;
+    position:relative;
+    border-bottom: rgb(240,240,240) 1px solid;
+}
+.header-selection li:first-child:after{
+    display: block;
+    content:"  ";
+    width: 3rem;
+    height:3px;
+    background:rgb(255,209,97);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

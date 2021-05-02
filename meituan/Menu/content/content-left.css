@@ -1,0 +1,36 @@
+.content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top:7rem;
+    display:flex;
+    overflow: hidden;
+    padding-bottom:5rem;
+}
+.active{
+    background: white;
+}
+.content-left{
+    width:5.5rem;
+    height: 100%;
+    margin-top: 3px;
+    background: #efefef;
+    overflow:auto;
+    /*手机端ios操作系统会更顺滑*/
+    /*-webkit-overflow-scrolling: touch;*/
+    font-size:0.9rem;
+    color: rgb(114,116,114);
+}
+.content-left-item{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: rgb(178,178,178) 1px solid;
+}
+.item-icon{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.4rem;
+}

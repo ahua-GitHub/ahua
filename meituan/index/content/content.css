@@ -1,0 +1,117 @@
+.content-list{
+    width: 100%;
+    background: white;
+    margin-bottom: 4rem;
+}
+.list-title{
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-line{
+    margin-right:0.4rem;
+    margin-left:0.4rem;
+    display: inline-block;
+    width: 4rem;
+    border-bottom:1px solid slategray;
+}
+.item-content{
+    display: flex;
+    margin-left:0.6rem;
+    margin-top: 1rem;
+    padding-bottom:1rem;
+    border-bottom: 0.5px rgb(240,240,240) solid;
+    overflow: hidden;
+    position: relative;
+}
+.item-title{
+    font-size:1.1rem;
+    color: black;
+}
+.item-info-content{
+    width:15rem;
+    flex:1;
+    margin-left: 0.5rem;
+    color: #686868;
+    font-size: 0.8rem;
+}
+.item-desc{
+    color: #686868;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+}
+.item-desc-sales{
+    float: left;
+    margin-left: 0.3rem;
+}
+.item-desc-star{
+    float: left;
+}
+.item-desc-distance{
+    float: right;
+}
+.item-desc-time{
+    float: right;
+}
+.item-price{
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.item-pre-price{
+    float: left;
+}
+.brand{
+    position: absolute;
+    background: #fecd09;
+    color: whitesmoke;
+    padding: 0.1rem;
+}
+.item-img{
+    width: 6.2933333333rem;
+    height:4.7333333333rem;
+}
+.other-content{
+    float: left;
+    padding-top:0.6rem;
+    display: flex;
+    justify-content: center;
+    height: 1rem;
+}
+.other-text{
+    width:14rem;
+    float:left;
+    margin-left: 1rem;
+}
+.icon_url{
+    width:1rem;
+    height:1rem;
+    float:left;
+}
+
+.star{
+    width:1rem;
+    height:1rem;
+    float: left;
+}
+.fullStar {
+    background: url("img/fullstar.png") no-repeat;
+    background-size: 100% 100%;
+}
+.halfStar{
+    background: url("img/halfstar.png") no-repeat;
+    background-size: 100% 100%;
+}
+.nullStar{
+    background: url("img/gray-star.png");
+    background-size: 100% 100%;
+}
+.loading{
+    width: 100%;
+    text-align: center;
+    color: rgb(104,104,104);
+}

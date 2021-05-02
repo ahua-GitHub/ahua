@@ -1,0 +1,74 @@
+.content-item{
+    margin-top: 1rem;
+    background: white;
+}
+.detail{
+    display: flex;
+}
+.detail img{
+    width: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    margin:0.5rem 1rem 0 1rem;
+}
+.detail-content{
+    width: 100%;
+}
+.detail-content-header{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px rgb(240,240,240) solid;
+}
+.detail-content-name{
+    width:12.6rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.detail-content-header span{
+    color:gainsboro;
+    display: block;
+    font-size:1.2rem;
+}
+.detail-content-over{
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 1.2rem;
+}
+.judge{
+    border-top: 1px rgb(240,240,240) solid;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.judge-text{
+    background: rgb(255,209,97);
+    width:6.5rem;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:70%;
+    border-radius: 5px;
+}
+.menu-content,.menu-all{
+    width: 100%;
+    height: 2rem;
+    font-size:0.9rem;
+    color:rgb(102,102,102);
+}
+.menu-num,.menu-money{
+    float: right;
+    margin-right: 2rem;
+}
+.menu-text,.menu-more{
+    float: left;
+}
+.menu-money span{
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}

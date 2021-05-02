@@ -1,0 +1,48 @@
+body{
+    background:rgb(238,238,238);
+}
+.content-list{
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+}
+.content-list li{
+    float: left;
+    height: 3rem;
+    width:100%;
+    background: white;
+}
+.address-content,.money-content,.suggest-content,.issue-content{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    line-height: 3rem;
+    margin-left:1rem;
+}
+.money-content,.issue-content{
+    border-top:1px solid rgb(238,238,238);
+}
+.suggest{
+    margin-top: 1rem;
+}
+.content-list img{
+    width: 1rem;
+    height: 1rem;
+}
+.role{
+    margin-right:1rem;
+    color:rgb(170,170,170);
+
+}
+.num,.time{
+    line-height: 3rem;
+    text-align: center;
+}
+.num{
+    margin-top: 1rem;
+    color:rgb(255,214,86);
+    font-size: 1.1rem;
+}
+.content-list .time{
+    background:rgb(238,238,238);
+}
