@@ -103,20 +103,11 @@ function starGame() {
         planX=plane.style.left;
         planY=plane.style.top;
     }
-    //键盘控制飞机移动
-    function onkeydown(event) {
-        var event=event||window.event;
-        //上下左右移动速度
-        var speedL,speedR,speedT,speedB=18;
-        if (plane.offsetLeft>=screen.offsetWidth-plane.offsetWidth){
-            speedR=0;
-        }if (plane.offsetLeft<=0){
-            speedL=0;
-        }if (plane.offsetTop>=screen.offsetHeight-plane.offsetHeight){
-            speedB=0;
-        }if (plane.offsetTop<=0){
-            speedT=0;
-        }
+    //定义键盘上下左右控制飞机移动的速度
+        var speedL=18;
+        var speedR=18;
+        var speedT=18;
+        var speedB=18;
         switch (event.keyCode) {
             case 65:plane.style.left=plane.offsetLeft-speedL+'px';break;
             case 68:plane.style.left=plane.offsetLeft+speedR+'px';break;
