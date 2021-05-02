@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="hand.css">
+
+</head>
+
+<body>
+  <div id="screen">
+    <!--分数-->
+    <div id="scoreMenu" class="scoreMenu">
+      <span id="score">得分：</span>
+      <div id="pause" class="pause">
+        <div id="change-text">暂停</div>
+        <img class="change-img"  id="change-img" src="img/pause.png">
+      </div>
+    </div>
+
+  <!--开始页面-->
+    <div id="startMenu" class="startMenu">
+      <div id="start" class="start"> 开始游戏</div>
+    </div>
+
+        <!-- 结束页面-->
+    <div id="gameOver" class="gameOver">
+      <span>你输了，继续打卡学习吧!!!</span>
+      <button id="again" class="again">重新开始</button>
+    </div>
+    <!-- 飞机 -->
+    <img src="./img/hero.png" id="plane" class="plane" alt="">
+
+
+    <!-- video用来开启摄像头 -->
+    <video class="video"></video>
+    <!-- 用来绘制识别内容 -->
+    <canvas class="canvas" width="1280px" height="720px" ></canvas>
+
+<!--     loading 效果，当摄像头开启成功后会隐藏-->
+    <div class="loading">
+      <div class="spinner"></div>
+      <div class="message">
+        Loading
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="hand.js"></script>
+</body>
+
+</html>

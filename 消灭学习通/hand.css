@@ -1,0 +1,176 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  bottom: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: 0 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  background-color: #596e73;
+  height:100%;
+  width:100%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.video.selfie {
+  transform: scale(-1, 1);
+}
+
+.canvas {
+  position: absolute;
+  height:100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.loading{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  backface-visibility: hidden;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.loading .message {
+  font-size: x-large;
+}
+
+.loading .spinner {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  border: 32px solid #bebebe;
+  border-top: 32px solid #3498db;
+  border-radius: 50%;
+}
+
+.loaded .loading {
+  opacity: 0;
+}
+#screen{
+  height:100%;
+  width:100%;
+  border: 1px black solid;
+  margin:auto;
+  position: relative;
+  overflow: hidden;
+  background-repeat: repeat-y;
+
+}
+.startMenu{
+  background: url(img/star.jpg) no-repeat;
+  position: absolute;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  z-index:300;
+}
+.start{
+  cursor: pointer;
+  position: absolute;
+  top:48%;
+  left: 45%;
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: coral;
+}
+.scoreMenu{
+  position: absolute;
+  border-radius:0 8px 8px 0;
+  width:80px;
+  height:80px;
+  line-height: 40px;
+  z-index:200;
+  left:40px;
+}
+.pause{
+  display: flex;
+  align-items: center;
+}
+.change-img{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.plane {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  z-index:100;
+}
+.bullet{
+  width: 20px;
+  height: 40px;
+  background-image: url("img/2.png");
+  position: absolute;
+  background-position:690px 853px;
+  z-index: 100;
+
+}
+.tank{
+  width:65px;
+  height:45px;
+  border-radius: 5px;
+  background-image: url("img/22.jpg");
+  background-size:75px 50px;
+  position: absolute;
+  z-index: 100;
+}
+.gameOver{
+  position:relative;
+  width: 300px;
+  height:200px;
+  font-size: 40px;
+  font-family:华文行楷;
+  text-align: center;
+  line-height: 80px;
+  top:40%;
+  left:40%;
+  color: black;
+  background: rgba(255,255,255,0.4);
+  z-index:200;
+  opacity: 0;
+}
+.again{
+  position: absolute;
+  width:100px;
+  height:30px;
+  z-index: 576;
+  text-align: center;
+  top:75%;
+  left:35%;
+}
